@@ -32,24 +32,76 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore modi nostrum eum ipsum! Fugiat.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem facere a neque impedit odio possimus, quasi illo ullam? Doloribus ducimus est officia provident non, libero expedita fugit pariatur. Corporis!</p>
     </h3>
+    <img class="profile" src="" alt="image for profile">
 </body>
 
 <!-- this will de section of selectable pages of the projects I have done -->
-<body>
-    <div class="photos">
-      <img class="photo" src="image1.jpg"alt="webpage 1" />
-        <h3>Lorem ipsum dolor sit.</h3>
-      <img class="photo" src="image2.jpg"alt="webpage 1" />
-        <h3>Lorem ipsum dolor sit amet.</h3>
-      <img class="photo" src="image3.jpg"alt="webpage 1" />
-        <h3>Lorem, ipsum.</h3>
-      <img class="photo" src="image4.jpg"alt="webpage 1" />
-        <h3>Lorem ipsum dolor sit.</h3>
-      <img class="photo" src="image5.jpg"alt="webpage 1" />
-        <h3>Lorem, ipsum dolor.</h3>    
+
+<!-- <div>
+    <h1>
+        <ul>
+            <li>
+                why wont this work
+            </li>
+        </ul>
+    </h1>
+</div> -->
+
+<div class="project">
+    <weblinks class="photos">
+      <a href="https://bard.google.com/"><img class="photo" src=""alt="webpage 1" /></a>
+        <h3 class="caption">Lorem ipsum dolor sit.</h3>
+      <a href="http://google.com"><img class="photo" src=""alt="webpage 2" /></a>
+        <h3 class="caption">Lorem ipsum dolor sit amet.</h3>
+      <a href="http://gmail.com"><img class="photo" src=""alt="webpage 3" /></a>
+        <h3 class="caption">Lorem, ipsum.</h3>
+      <a href="http://amazon.com"><img class="photo" src=""alt="webpage 4" /></a>
+        <h3 class="caption">Lorem ipsum dolor sit.</h3>
+      <a href="http://github.com"><img class="photo" src=""alt="webpage 5" /></a>
+        <h3 class="caption">Lorem, ipsum dolor.</h3>    
+    </weblinks>
+    <buttonright class="arrow-right"></buttonright>
+    <buttonleft class="arrow-left"></buttonleft>
+    <a href="http://github.com"><h3>-See All-</h3></a>
+</div>
+   
+
+<!-- section of familier software -->
+<div>
+    <h1>laierh</h1>
+        <div id="image">
+            <img src="imagesmall1.jpeg" alt="software logo 1">
+            <div class="caption">
+                title of software
+                <div class="description">
+                    description of software
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="arrow"></div>
-    <div class="arrow"></div>
-    </body>
-    
+
+<!-- Contact me section -->
+<!-- <div class="contact">
+    <h1>Contact Me</h1>
+<form action="contact.php" method="post">
+<input type="text" name="name" placeholder="Your name">
+<input type="email" name="email" placeholder="Your email">
+<textarea name="message" placeholder="Your message"></textarea>
+<input type="submit" value="Send">
+</form>
+<?php
+
+// Get the form data
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+// Send the email
+$subject = "Contact Form Submission from " . $name;
+$body = $message;
+
+mail("ColtonMakesStuff@gmail.com", $subject, $body);
+
+?>
+</div> -->
 </html>
