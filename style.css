@@ -1,0 +1,61 @@
+* {
+
+}Im not sure if this is better or not
+
+#title {
+    flex: auto ;
+background-color: aqua;
+font-style: italic;
+padding: ;
+}
+
+.links {
+background-color: #b75d5d;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b1b43;
+  padding: 10px 20px;
+  
+
+}
+
+#about {
+    background-color: lightgray;
+}
+.profile {
+
+}
+
+.photos {
+
+}
+
+.caption {
+
+}
+
+.arrow-left {
+
+}
+
+.arrow-right {
+
+}
+
+.grid {
+
+}
+
+.description {
+
+}
+
+.image {
+
+}
+
+#software {
+
+}
