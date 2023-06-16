@@ -1,26 +1,38 @@
 * {
 
-}Im not sure if this is better or not
+}
+
+body {
+  margin: 0px;
+}
 
 #title {
-    flex: auto ;
-background-color: aqua;
-font-style: italic;
-padding: ;
-}
+  background-color: aqua;
+  font-style: italic;
 
-.links {
-background-color: #b75d5d;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #2b1b43;
-  padding: 10px 20px;
+  }
   
-
+header {
+  padding: 0px;  
+  display: flex;
+  background-color: rgb(184, 184, 184);
 }
 
+
+nav {
+  display: flex; 
+  background-color: rgb(207, 189, 224); 
+  justify-content: flex-end;
+}
+
+nav a {
+color: rgb(30, 0, 96);
+padding: 11px 13px;
+text-decoration: none;
+text-align: center;
+
+
+}
 #about {
     background-color: lightgray;
 }
