@@ -7,9 +7,8 @@ body {
 }
 
 #title {
-  background-color: aqua;
+  background-color: rgb(230, 215, 224);
   font-style: italic;
-
   }
   
 header {
@@ -17,7 +16,11 @@ header {
   display: flex;
   background-color: rgb(184, 184, 184);
 }
+/* header img {
+ float: inline-start;
 
+}
+ */
 
 nav {
   display: flex; 
@@ -30,17 +33,41 @@ color: rgb(30, 0, 96);
 padding: 11px 13px;
 text-decoration: none;
 text-align: center;
-
-
-}
-#about {
-    background-color: lightgray;
-}
-.profile {
-
+border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: aqua;
 }
 
-.photos {
+/* this section is for the about me portion of the page */
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.about-me {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+
+  background-color: lightgoldenrodyellow;
+  justify-content: end;
+}
+
+textarea {
+ padding-left: 20px;
+}
+
+.profile-img {
+  float: right;
+  padding-right:20px;
+
+}
+
+/* this section is for the carousel of webpages */
+
+.photo-section {
 
 }
 
@@ -70,4 +97,16 @@ text-align: center;
 
 #software {
 
+}
+
+/* got assistance from phind on this one, its purpose is to allow the image to change positions when page size changes  */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* stack the items vertically */
+  }
+
+  .text-block {
+    margin-left: 0; /* remove the spacing between the image and text */
+  }
 }
