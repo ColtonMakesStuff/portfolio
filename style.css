@@ -22,6 +22,8 @@ header {
 }
  */
 
+/* navigation buttons */
+
 nav {
   display: flex; 
   background-color: rgb(207, 189, 224); 
@@ -37,8 +39,27 @@ border: 1px solid black;
   padding: 5px 10px;
   border-radius: 15px;
   background-color: aqua;
+  margin-left: 2px;
+  
 }
 
+/* button hover */
+nav a:hover { 
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(101, 116, 116);
+}
+
+/* button click */
+nav a:active { 
+  border: 1px solid rgb(255, 0, 0);
+  padding: 3px 8px;
+  border-radius: 15px;
+  background-color: rgb(101, 116, 116);
+  margin-left: 3px;
+  margin-right: 3px;
+}
 /* this section is for the about me portion of the page */
 
 .container {
@@ -48,7 +69,7 @@ border: 1px solid black;
 
 .about-me {
   flex: 1;
-  margin-left: 10px;
+  padding-left: 10px;
   text-align: left;
 
   background-color: lightgoldenrodyellow;
@@ -67,21 +88,52 @@ textarea {
 
 /* this section is for the carousel of webpages */
 
-.photo-section {
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-left: 50px;
+}
 
+.photo-section {
+  flex: 0 0 30%; /* Each section takes 30% of the container width */
+  align-items:center; /* vertically center the items */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.photo-section img {
+  border: 2px solid green;
+}
+
+.photo-section img:hover {
+  border: 2px solid rgb(104, 252, 104);
 }
 
 .caption {
+  flex: 1; /* allow the text block to grow and shrink */
+  margin-left: 10px; /* add some spacing between the image and text */
+}
+
+.arrow {
 
 }
 
-.arrow-left {
+.photos a h3 {
 
 }
 
-.arrow-right {
-
+.wrapper {
+  text-align: center;
+  
 }
+
+.wrapper a {
+  
+}
+
 
 .grid {
 
