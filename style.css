@@ -24,6 +24,7 @@ nav {
   display: flex; 
   background-color: rgb(207, 189, 224); 
   justify-content: flex-end;
+ 
 }
 
 nav a {
@@ -64,12 +65,16 @@ nav a:active {
 }
 
 .about-me {
+  
   flex: 1;
   padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
-
   background-color: lightgoldenrodyellow;
   justify-content: end;
+  border-bottom: 15px solid grey;
+  border-top: 15px solid grey;
 }
 
 textarea {
@@ -102,6 +107,9 @@ textarea {
 
 .photo-section img {
   border: 2px solid green;
+  border-radius: 15px;
+  background-color: lightblue;
+  padding: 12px;
 } 
 
 .photo-section img:hover {
@@ -111,6 +119,7 @@ textarea {
 .caption {
   flex: 1; /* allow the text block to grow and shrink */
   margin-left: 10px; /* add some spacing between the image and text */
+  
 }
 
 /*  this is the button that will navigate to a new page with a grid of the projects */
@@ -132,6 +141,14 @@ button.see-all-button {
     cursor: pointer;
   }
 
+.see-all-button:active {
+  border: 1px solid rgb(255, 0, 0);
+  padding: 3px 8px;
+  border-radius: 15px;
+  background-color: rgb(101, 116, 116);
+  margin-left: 3px;
+  margin-right: 3px;
+}
 
 .see-all-button:hover { 
   border: 1px solid black;
@@ -146,7 +163,9 @@ button.see-all-button {
   border-radius: 15px;
   background-color: rgb(101, 116, 116);
 }
-      
+     
+/* thesen are the arrow buttons on either side of the carousel */
+
 button.arrow-button {
   color: rgb(30, 0, 96);
   text-decoration: none;
@@ -177,32 +196,47 @@ button.arrow-button {
     margin-right: 1px;
   }
   
-.photos a h3 {
+ /* this is the software that I am most familier with section */
+
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  background-color: lightpink;
+  border: 2px solid deeppink;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.knowledge h4 {
+  font-size: large;
+  font-style: italic;
 
 }
 
-
-
-.wrapper a {
-  
+.knowledge p {
+  background-color: paleturquoise;
 }
-
 
 .grid {
-
+  margin-top: 25px;
+  text-align: center;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+gap: 10px; /* Adjust the gap between items as needed */
+background: ;
 }
 
-.description {
-
+.grid-item {
+position: relative;
+margin: 8%;
 }
 
-.image {
-
+.grid .grid-item img{
+  width: 80%;
+  height: auto;
 }
 
-#software {
-
-}
 
 /* got assistance from phind on this one, its purpose is to allow the image to change positions when page size changes  */
 
