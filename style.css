@@ -2,61 +2,136 @@
 
 }
 
+:root {
+  --deep-orange : rgb(243, 125, 42);
+  --light-orange : rgb(255, 132, 65);
+  --lightest-orange : rgb(245, 183, 150);
+  --lightest-blue : rgb(181, 222, 223);
+  --light-blue : rgb(110, 237, 231);
+  --teal : rgb(33, 229, 200);
+  --darker-than-my-soul : rgb(26, 88, 108);
+}
+
 body {
   margin: 0px;
 }
 
 #title {
-  background-color: rgb(230, 215, 224);
+  background-color: var(--lightest-blue);
   font-style: italic;
-  }
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 12px;
+ 
+}
   
 header {
   padding: 0px;  
   display: flex;
-  background-color: rgb(184, 184, 184);
+  background-color: var(--lightest-blue);
+  justify-content: space-between;
 }
 
-
+header div {
+  padding: 5px;  
+  display: flex;
+}
 /* navigation buttons */
 
-nav {
+header nav {
   display: flex; 
-  background-color: rgb(207, 189, 224); 
-  justify-content: flex-end;
- 
+  background-color:var(--lightest-blue); 
+  margin-top: 20px;
 }
 
-nav a {
-color: rgb(30, 0, 96);
-padding: 11px 13px;
-text-decoration: none;
-text-align: center;
-border: 1px solid black;
+button.options {
+  color: rgb(30, 0, 96);
+  padding: 11px 13px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid var(--lightest-blue);
   padding: 5px 10px;
-  border-radius: 15px;
-  background-color: aqua;
-  margin-left: 2px;
-  
+  background-color: var(--lightest-blue);
 }
 
 /* button hover */
-nav a:hover { 
-  border: 1px solid black;
+.options:hover { 
+  border: 3px solid var(--deep-orange);
   padding: 5px 10px;
-  border-radius: 15px;
-  background-color: rgb(101, 116, 116);
+  border-radius: 5px;
+  background-color: var(--lightest-blue);
 }
 
 /* button click */
-nav a:active { 
-  border: 1px solid rgb(255, 0, 0);
+.options:active { 
+  border: 1px solid rgb(255, 0, 234);
   padding: 3px 8px;
   border-radius: 15px;
   background-color: rgb(101, 116, 116);
   margin-left: 3px;
   margin-right: 3px;
 }
+
+/* menu button when page is shrunk */
+
+button.menu-button {
+  color: rgb(30, 0, 96);
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 13px;
+  border-radius: 15px;
+  background-color: aqua;
+  font-size: large;
+  cursor: pointer;
+}
+
+.menu-button:hover { 
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(101, 116, 116);
+}
+
+.menu-button:active {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 3px 7px;
+  border-radius: 15px;
+  background-color: rgb(101, 116, 116);
+}
+
+/* this should be the box of more options that pops up when you click the button */
+
+.menu {
+  display: block;
+  flex-direction: column;
+}
+.mas-options {
+  flex-direction: column;
+  /* display: none; */
+  background-color: lightgray;
+  margin: 0;
+ 
+  
+}
+
+button.more-options {
+
+}
+
+/* button hover */
+.more-options:hover { 
+  
+}
+
+/* button click */
+.more-options:active { 
+
+}
+
+
+
+
 /* this section is for the about me portion of the page */
 
 .container {
@@ -142,7 +217,7 @@ button.see-all-button {
   }
 
 .see-all-button:active {
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   padding: 3px 8px;
   border-radius: 15px;
   background-color: rgb(101, 116, 116);
@@ -158,19 +233,20 @@ button.see-all-button {
 }
 
 .see-all-button:active {
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   padding: 3px 8px;
   border-radius: 15px;
   background-color: rgb(101, 116, 116);
 }
      
-/* thesen are the arrow buttons on either side of the carousel */
+/* these are the arrow buttons on either side of the carousel */
+/* got a little help from phind on this one */
 
 button.arrow-button {
-  color: rgb(30, 0, 96);
-  text-decoration: none;
-  text-align: center;
-  border: 1px solid black;
+    color: rgb(30, 0, 96);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
     padding: 5px 13px;
     border-radius: 15px;
     background-color: aqua;
@@ -188,7 +264,7 @@ button.arrow-button {
   }
 
   .arrow-button:active {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     padding: 3px 13px;
     border-radius: 15px;
     background-color: rgb(0, 133, 133);
@@ -223,9 +299,8 @@ button.arrow-button {
   text-align: center;
 display: grid;
 grid-template-columns: repeat(6, 1fr);
-gap: 10px; /* Adjust the gap between items as needed */
-background: ;
-}
+gap: 10px;} /* Adjust the gap between items as needed */
+
 
 .grid-item {
 position: relative;
@@ -248,4 +323,11 @@ margin: 8%;
   .text-block {
     margin-left: 0; /* remove the spacing between the image and text */
   }
+}
+
+@media (max-width: 768px) {
+  nav {
+    
+  }
+
 }
