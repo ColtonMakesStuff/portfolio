@@ -1,7 +1,7 @@
 * {
 
 }
-
+/* defines re-used colors */
 :root {
   --deep-orange : rgb(243, 125, 42);
   --light-orange : rgb(255, 132, 65);
@@ -12,38 +12,48 @@
   --darker-than-my-soul : rgb(26, 88, 108);
 }
 
+
+/* set body margins */
 body {
   margin: 0px;
 }
 
+/* title text styling */
 #title {
-  background-color: var(--lightest-blue);
   font-style: italic;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 12px;
- 
+ padding-left: 15px;
 }
   
-header {
+/* set basic header layout */
+header section{
   padding: 0px;  
   display: flex;
   background-color: var(--lightest-blue);
   justify-content: space-between;
 }
 
-header div {
-  padding: 5px;  
+header section div {
+  padding: 8px;  
   display: flex;
+  align-content: flex-start;
 }
-/* navigation buttons */
+
+
+
+
+/* main navigation buttons */
+
 
 header nav {
   display: flex; 
   background-color:var(--lightest-blue); 
-  margin-top: 20px;
+  margin-top: 25px;
+  align-content: flex-end;
 }
-
+/* what is button */
 button.options {
   color: rgb(30, 0, 96);
   padding: 11px 13px;
@@ -52,16 +62,16 @@ button.options {
   border: 3px solid var(--lightest-blue);
   padding: 5px 10px;
   background-color: var(--lightest-blue);
+  font-size: medium;
 }
-
 /* button hover */
 .options:hover { 
-  border: 3px solid var(--deep-orange);
+  border: 3px solid var(--light-blue);
   padding: 5px 10px;
   border-radius: 5px;
   background-color: var(--lightest-blue);
+  
 }
-
 /* button click */
 .options:active { 
   border: 1px solid rgb(255, 0, 234);
@@ -72,7 +82,8 @@ button.options {
   margin-right: 3px;
 }
 
-/* menu button when page is shrunk */
+
+/* menu button for when page is shrunk */
 
 button.menu-button {
   color: rgb(30, 0, 96);
@@ -85,14 +96,12 @@ button.menu-button {
   font-size: large;
   cursor: pointer;
 }
-
 .menu-button:hover { 
   border: 1px solid black;
   padding: 5px 10px;
   border-radius: 15px;
   background-color: rgb(101, 116, 116);
 }
-
 .menu-button:active {
   border: 1px solid rgb(0, 0, 0);
   padding: 3px 7px;
@@ -100,47 +109,41 @@ button.menu-button {
   background-color: rgb(101, 116, 116);
 }
 
+
 /* this should be the box of more options that pops up when you click the button */
 
 .menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.menu-button:focus .menu{
   display: block;
-  flex-direction: column;
 }
-.mas-options {
-  flex-direction: column;
-  /* display: none; */
-  background-color: lightgray;
-  margin: 0;
- 
-  
+.more-options {
+  display: block;
+  margin-bottom: 5px;
 }
-
 button.more-options {
 
 }
-
 /* button hover */
-.more-options:hover { 
+.more-options:focus { 
   
 }
-
 /* button click */
 .more-options:active { 
 
 }
 
 
-
-
 /* this section is for the about me portion of the page */
-
 .container {
   display: flex;
   align-items: center;
 }
-
-.about-me {
-  
+.about-me { 
   flex: 1;
   padding-left: 10px;
   padding-top: 10px;
@@ -151,71 +154,60 @@ button.more-options {
   border-bottom: 15px solid grey;
   border-top: 15px solid grey;
 }
-
 textarea {
  padding-left: 20px;
 }
-
 .profile-img {
   float: right;
   padding-right:20px;
-
 }
 
-/* this section is for the carousel of webpages */
 
+/* this section is for the carousel of webpages */
 .photos {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
   width: 100%;
   text-align: center;
-  justify-content: center;
 }
-
 .photo-section {
-  flex: 0 0 30%; /* Each section takes 30% of the container width */
+  flex: 1 0 200px; /* Each section takes 30% of the container width */
   align-items:center; /* vertically center the items */
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .photo-section img {
+  
   border: 2px solid green;
   border-radius: 15px;
   background-color: lightblue;
   padding: 12px;
 } 
-
 .photo-section img:hover {
   border: 2px solid rgb(104, 252, 104);
 }
-
 .caption {
   flex: 1; /* allow the text block to grow and shrink */
-  margin-left: 10px; /* add some spacing between the image and text */
-  
+  margin-left: 10px; /* add some spacing between the image and text */ 
 }
 
 /*  this is the button that will navigate to a new page with a grid of the projects */
-
-.wrapper {
+.center-button {
   text-align: center;
 }
-
 button.see-all-button {
   color: rgb(30, 0, 96);
   text-decoration: none;
   text-align: center;
   border: 1px solid black;
-    padding: 5px 13px;
-    border-radius: 15px;
-    background-color: aqua;
-    margin-left: 2px;
-    font-size: large;
-    cursor: pointer;
+  padding: 5px 13px;
+  border-radius: 15px;
+  background-color: aqua;
+  margin-left: 2px;
+  font-size: large;
+  cursor: pointer;
   }
-
 .see-all-button:active {
   border: 1px solid rgb(0, 0, 0);
   padding: 3px 8px;
@@ -224,14 +216,12 @@ button.see-all-button {
   margin-left: 3px;
   margin-right: 3px;
 }
-
 .see-all-button:hover { 
   border: 1px solid black;
   padding: 5px 10px;
   border-radius: 15px;
   background-color: rgb(101, 116, 116);
 }
-
 .see-all-button:active {
   border: 1px solid rgb(0, 0, 0);
   padding: 3px 8px;
@@ -241,7 +231,6 @@ button.see-all-button {
      
 /* these are the arrow buttons on either side of the carousel */
 /* got a little help from phind on this one */
-
 button.arrow-button {
     color: rgb(30, 0, 96);
     text-decoration: none;
@@ -255,14 +244,12 @@ button.arrow-button {
     font-size: large;
     cursor: pointer;
   }
-
   .arrow-button:hover { 
     border: 1px solid black;
     padding: 5px 13px;
     border-radius: 15px;
     background-color: rgb(101, 116, 116);
   }
-
   .arrow-button:active {
     border: 1px solid rgb(0, 0, 0);
     padding: 3px 13px;
@@ -272,8 +259,8 @@ button.arrow-button {
     margin-right: 1px;
   }
   
- /* this is the software that I am most familier with section */
 
+ /* this is the software that I am most familier with section */
 .knowledge {
   display: flex;
   flex-direction: column;
@@ -283,37 +270,40 @@ button.arrow-button {
   margin-right: 10px;
   margin-top: 15px;
 }
-
+/* explanation of section */
 .knowledge h4 {
   font-size: large;
   font-style: italic;
-
 }
-
 .knowledge p {
   background-color: paleturquoise;
 }
 
+/* this is the grid of software */
 .grid {
   margin-top: 25px;
   text-align: center;
 display: grid;
-grid-template-columns: repeat(6, 1fr);
+grid-template-columns: repeat(5, 1fr);
 gap: 10px;} /* Adjust the gap between items as needed */
-
-
 .grid-item {
 position: relative;
 margin: 8%;
 }
-
 .grid .grid-item img{
   width: 80%;
   height: auto;
 }
-
-
 /* got assistance from phind on this one, its purpose is to allow the image to change positions when page size changes  */
+
+
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
 
 @media (max-width: 768px) {
   .container {
@@ -323,11 +313,30 @@ margin: 8%;
   .text-block {
     margin-left: 0; /* remove the spacing between the image and text */
   }
-}
 
-@media (max-width: 768px) {
-  nav {
-    
+  header nav{
+    display: none;
   }
 
+  .about-me {
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .knowledge {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+ .grid{
+  grid-template-columns: repeat(2, 1fr);
+}
 }
