@@ -1,5 +1,5 @@
 * {
-
+  box-sizing: border-box;
 }
 /* defines re-used colors */
 :root {
@@ -15,6 +15,10 @@
 
 /* set body margins */
 body {
+  background-color: rgb(227, 193, 225);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0px;
 }
 
@@ -29,16 +33,15 @@ body {
   
 /* set basic header layout */
 header section{
-  padding: 0px;  
   display: flex;
   background-color: var(--lightest-blue);
   justify-content: space-between;
 }
 
 header section div {
-  padding: 8px;  
+  padding: 5px;  
   display: flex;
-  align-content: flex-start;
+
 }
 
 
@@ -56,9 +59,7 @@ header nav {
 /* what is button */
 button.options {
   color: rgb(30, 0, 96);
-  padding: 11px 13px;
   text-decoration: none;
-  text-align: center;
   border: 3px solid var(--lightest-blue);
   padding: 5px 10px;
   background-color: var(--lightest-blue);
@@ -66,47 +67,51 @@ button.options {
 }
 /* button hover */
 .options:hover { 
-  border: 3px solid var(--light-blue);
+  border-bottom: 2px solid black;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: var(--lightest-blue);
-  
+  transition: .3s ease-in;
+  cursor: pointer;
 }
+
+
 /* button click */
 .options:active { 
-  border: 1px solid rgb(255, 0, 234);
-  padding: 3px 8px;
+  border-bottom: 1px ;
+  padding: 8px;
+  transition: 0s ease-in;
+  background-color: rgb(182, 214, 214);
+  margin-left: 2px;
+  margin-right: 2px;
   border-radius: 15px;
-  background-color: rgb(101, 116, 116);
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
 
 /* menu button for when page is shrunk */
-
-button.menu-button {
+ .menu-button img {
+  height: 18px;
+ }
+.menu-button {
   color: rgb(30, 0, 96);
   text-decoration: none;
-  text-align: center;
-  border: 1px solid black;
-  padding: 5px 13px;
-  border-radius: 15px;
-  background-color: aqua;
-  font-size: large;
-  cursor: pointer;
+  border: 3px solid var(--lightest-blue);
+  padding: 0px 9px;
+  background-color: var(--lightest-blue);
+  font-size: xx-large;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 .menu-button:hover { 
-  border: 1px solid black;
-  padding: 5px 10px;
   border-radius: 15px;
-  background-color: rgb(101, 116, 116);
+  rotate: 360deg;
+  transition: .7s ease;
+  background-color: rgb(156, 189, 189);
 }
 .menu-button:active {
-  border: 1px solid rgb(0, 0, 0);
-  padding: 3px 7px;
-  border-radius: 15px;
   background-color: rgb(101, 116, 116);
+
 }
 
 
@@ -139,11 +144,9 @@ button.more-options {
 
 
 /* this section is for the about me portion of the page */
-.container {
-  display: flex;
-  align-items: center;
-}
+
 .about-me { 
+  margin-top: 50px;
   flex: 1;
   padding-left: 10px;
   padding-top: 10px;
@@ -152,8 +155,14 @@ button.more-options {
   background-color: lightgoldenrodyellow;
   justify-content: end;
   border-bottom: 15px solid grey;
-  border-top: 15px solid grey;
+  border-top: 15px solid rgb(129, 145, 157);
 }
+.container {
+  display: flex;
+  align-items: center;
+  padding: 6% ;
+}
+
 textarea {
  padding-left: 20px;
 }
@@ -162,6 +171,8 @@ textarea {
   padding-right:20px;
 }
 
+
+ 
 
 /* this section is for the carousel of webpages */
 .photos {
@@ -316,6 +327,7 @@ margin: 8%;
 
   header nav{
     display: none;
+    animation:normal :
   }
 
   .about-me {
@@ -333,10 +345,16 @@ margin: 8%;
 @media (min-width: 768px) {
   .menu-button {
     display: none;
+    .about-me {
+      padding: 1%;
+      /* animation: resize 1s ease; */
+    }
   }
 }
 @media (max-width: 430px) {
  .grid{
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);}
+
 }
-}
+
+
