@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="body">
+    <div class="background">
 
-
+</div>
 
 
 
@@ -20,7 +21,7 @@
         <img src="https://dummyimage.com/75" alt="image of logo">
         <h1 id="title">ColtonMakesStuff</h1>
     </div>
-  
+
 
 <!-- navigation -->
 
@@ -34,9 +35,9 @@
     <a type="menu" class="menu-button" id="menuButton" onclick= "openPopup()"><img src="assets/hamburger.svg" alt=""></a>
  <div class="menuBox" id="menuBox">
     <div class="menu" >
-        <a href="#about-me"><button class="more-options">About Me</button></a>
-        <a href="#projects"><button class="more-options">Projects</button></a>
-        <a href="#software"><button class="more-options">Software</button></a>
+        <a href="#about-me"><button class="more-options">&#x2022; About Me</button></a>
+        <a href="#projects"><button class="more-options">&#x2022; Projects</button></a>
+        <a href="#software"><button class="more-options">&#x2022; Software</button></a>
     </div>
 </div>
 </section>
@@ -44,6 +45,9 @@
 
 </header>
 
+<div class="hello">
+    <p>Hi! I'm Colton, Software Engineer and Maker of Stuff.</p>
+</div>
 
 
 
@@ -69,42 +73,159 @@
 
     <!-- this will de section of selectable pages of the projects I have done -->
 
-<div class="photos">
-        <a href=""><button type="custom" class="arrow-button"><</button></a>
-    
-        <div class="photo-section">
-            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
-                <p class="caption">website caption and blurb</p>
+  
+
+<div class="projects">
+    <textbox class="textbox">
+        <p>Past & Current Projects</p>
+    </textbox>
+    <!-- <a href=""><button id="previous" class="arrowButton" onclick= "plusSlides(-1)">&#10094;</button></a> -->
+    <!--  image slider start -->
+  
+    <div class="projectSlides">
+        <div class="slidesAndButtons">
+             <!-- radio buttons start -->
+             <input type="radio" name="radio-btn" id="radio1">
+             <input type="radio" name="radio-btn" id="radio2">
+             <input type="radio" name="radio-btn" id="radio3">
+             <input type="radio" name="radio-btn" id="radio4">
+             <input type="radio" name="radio-btn" id="radio5">
+
+             <!-- radio buttons end -->
+             <!-- slide images start -->
+            <div class="slide first">
+                <div class="webContainer">
+                <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                    <div class="stack">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="slide">
+                <div class="webContainer">
+                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                        <div class="stack">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
+                        </div>    
+                    </div>
+            </div>
+            <div class="slide">
+                <div class="webContainer">
+                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                        <div class="stack">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
+                        </div>    
+                    </div>
+            </div>
+            <div class="slide">
+                <div class="webContainer">
+                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                        <div class="stack">
+                            <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
+                        </div>    
+                    </div>
+            </div>
+            <div class="slide">
+                <div class="webContainer">
+                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                        <div class="stack">
+                            <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
+                        </div>    
+                    </div>
+            </div>
+         
+            <!-- slide images end -->
+            <!-- automatic navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
         </div>
-        <div class="photo-section">
+            <!-- automatic navigation end -->
+<div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    <label for="radio5" class="manual-btn"></label>
+</div>
+            </div>
+        </div>
+
+        <mostCurrent class="mostCurrent">
+           <div class="photoContainer">
+             <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+            <p class="caption">website caption and blurb</p>
+        </div>
+ 
+        </mostCurrent>
+
+        <div class="photoSection">
+            <div class="photoContainer">
             <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                 <p class="caption">website caption and blurb</p>
             </div>
-        <div class="photo-section">
+                <div class="photoContainer">
             <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                 <p class="caption">website caption and blurb</p>
-        </div>
-    
-        <a href=""><button type="custom" class="arrow-button">></button></a>
-    
-</div>
+            </div>
+                <div class="photoContainer">     
+            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                <p class="caption">website caption and blurb</p>
+            </div>
 
-
-<div >
-    <div class="center-button">
-         <a href=""><button class="see-all-button">- See All -</button></a>
+            <div class="photoContainer">
+            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                <p class="caption">website caption and blurb</p>
+            </div>
+        
+<div class="photoContainer">
+            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                <p class="caption">website caption and blurb</p>
+            </div>
+            </div>
+            <div >
+                <div class="center-button">
+                     <a href=""><button class="see-all-button">- See All -</button></a>
+                </div>
+            </div>
     </div>
-</div>
+
+        
+
+
+        <!-- next and previous buttons -->
+        
+        
+        <!-- <a href=""><button id="next" class="arrowButton" onclick= "plusSlides(1)">&#10095;</button></a> -->
+<!-- 
+        smaller photos
+        <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="changeimg()"alt="The Woods">
+            </div>
+        </div> -->
+    </div> 
+
+
+
 
 
 
 
 
 <!-- section of familier software -->
-
+<div class="background">
 <div class="knowledge">
 <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto optio officia doloremque culpa quos id quibusdam fugit dignissimos voluptatem, ex magni atque praesentium repellendus consequatur et iure pariatur provident? Libero, pariatur!</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe quos ex!   ipsum dolor sit amet consectetur adipisicing elit. Amet architecto optio officia doloremque culpa quos id quibusdam fugit dignissimos voluptatem, ex magni atque praesentium repellendus consequatur et iure pariatur provident? Libero, pariatur!</p>
 </div>
 
 <div class="software">
@@ -137,10 +258,11 @@
             <img src="https://dummyimage.com/100" alt="Image 1">
             <div class="caption">Caption 1</div>
         </div>
-        
+
     </div>
 </div>
-</body> 
+</div>
+</body>
 
 
 Contact me section
