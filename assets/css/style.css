@@ -18,11 +18,12 @@
 /* set body margins */
 body {
   background-image: linear-gradient(to bottom right, #f7f6f4, #fff7e1);
+  
 }
 
 /* start title text styling */
 #title {
-  font-style: italic;
+  
   margin: 0;
   font-size: 40px;
   color: #1f486e;
@@ -34,7 +35,6 @@ body {
   
 /* start basic header layout */
 header section{
-  border-top: 15px solid var(--darker-than-my-soul);
   
   display: flex;
   
@@ -51,9 +51,8 @@ header section div {
 }
 header div img {
   margin: 10px;
-  border-radius: 50%;
-  border: 7px solid var(--darker-than-my-soul);
-  height: 112%;
+  
+  height: 125px;
 }
 /* end header layout */
 
@@ -204,9 +203,20 @@ display: flex;
 textarea {
  padding-left: 20px;
 }
+.about-me h2{
+  padding-left: 20px;
+}
+.about-me h3 {
+  margin-top: 12px;
+  font-size: larger;
+  padding-left: 20px;
+}
 .profile-img {
   float: right;
-  padding-right:20px;
+  
+  height: 300px;
+  
+  border-radius: 15px;
 }
 /* end about me portion */
 
@@ -238,8 +248,8 @@ flex-direction: column;
   padding-bottom: 30px;
   border-radius: 15px;
   font-size: xx-large;
- 
 }
+
  .projectSlides {
   width: 80%;
   margin-left: 10%;
@@ -279,6 +289,9 @@ or flexible to screen resizing*/
  .stack {
   margin-left: 25px;
   margin-right: 25px;
+ }
+ .stack p {
+  margin-top: 17px;
  }
  .slide img {
   height: 400px;
@@ -426,6 +439,9 @@ transition: 1s:
   align-content: center;
  
 }
+.photoContainer img {
+  height: 300px;
+}
 .photoSection img {
   background-color: 
 
@@ -458,6 +474,7 @@ transition: 1s:
 .center-button {
   text-align: center;
   margin-top: 45px;
+  
 }
 button.see-all-button {
   color: #1f486e;
@@ -537,11 +554,13 @@ gap: 10px;} /* Adjust the gap between items as needed */
 position: relative;
 color: white;
 margin: 8%;
+font-size: x-large;
 }
 .grid .grid-item img{
   width: 80%;
   border-radius: 23%;
   height: auto;
+  background-color: #cbd6e2;
 }
 /* end grid of software */
 /* end software section */
@@ -559,6 +578,7 @@ flex-direction: row;
 
 }
 .contactSiteCard {
+ 
 margin-left: 6%;
 margin-right: 6%;
 margin-top: 50px;
@@ -566,22 +586,29 @@ margin-bottom: 75px;
 }
 .contactSiteCard img{
   height: 150px;
-  border-radius: 50%;
+ 
+ margin: 14%; 
+  width: 150px;
 }
 .contactSiteCard p {
-  text-align: center;
+text-align: center;
+margin-left: 20px;
 color: var(--darker-than-my-soul);
-font-size: large;
+font-size: larger;
 }
 .contactText {
-  margin-top: 50px;
+  margin-top: 25px;
   align-self: center;
   width: 65%;
 font-size: larger;
 text-align: center;
 }
+.contactText p {
+  margin-top: 15px;
+  text-align: left;
+}
 .contactText h2 {
-  margin-bottom: 20px;
+  
 }
 .contactMe .resume {
   align-self: center;
@@ -594,6 +621,13 @@ margin-bottom: 50px;
 
 }
 /* end contact section */
+
+.footerBar {
+  background-color: #1f486e;
+  color: #9dbbd6;
+  padding: 15px;
+  font-size: small;
+}
 
 /* start media inquiries */
 @media (max-width: 1110px) {
@@ -621,10 +655,7 @@ margin-bottom: 50px;
     margin-left: 0; /* remove the spacing between the image and text */
   }
 
-  header nav{
-    display: none;
-    animation:normal;
-  }
+  
 
   .about-me {
     text-align: center;
@@ -648,8 +679,13 @@ margin-bottom: 50px;
      
   }
 }
-
-@media (min-width: 768px) {
+@media (max-width: 1000px) {
+  header nav{
+    display: none;
+    animation:normal;
+  }
+}
+@media (min-width: 1000px) {
   .menu-button {
     display: none;
     .about-me {
