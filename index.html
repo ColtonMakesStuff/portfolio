@@ -17,12 +17,14 @@
 <!-- start header -->
 <header>
 <section>
+    <!-- I learned how to make svg images out of my own drawings to import as assets! so cool! -->
     <div>
         <img src="assets/logologo.svg" alt="image of logo of stacked rocks">
         <h1 id="title">ColtonMakesStuff</h1>
     </div>
+    <!-- end of what you could say is a "full stack" logo for this "software engineer" -->
 
-<!-- start navigation -->
+    <!-- start navigation -->
     <nav >
         <a href="#about-me"><button class="options">About Me</button></a>
         <a href="#projects"><button class="options">Projects</button></a>
@@ -30,14 +32,14 @@
         <a href="#contactMe"><button class="options">Contact</button></a>
     </nav>
     <a type="menu" class="menu-button" id="menuButton" onclick= "openPopup()"><img src="assets/hamburger.svg" alt=""></a>
- <div class="menuBox" id="menuBox">
+ <menu-section class="menuBox" id="menuBox">
     <div class="menu" >
         <a href="#about-me"><button class="more-options">&#x2022; About Me</button></a>
         <a href="#projects"><button class="more-options">&#x2022; Projects</button></a>
         <a href="#software"><button class="more-options">&#x2022; Software</button></a>
         <a href="#contactMe"><button class="more-options">&#x2022; Contact</button></a>
     </div>
-</div>
+</menu-section>
 <!--  end navigation -->
 
 </section>
@@ -45,9 +47,9 @@
 <!-- end header -->
 
 
-<div class="hello">
+<welcome-section class="hello">
     <p>Hi! I'm Colton, Software Engineer and Maker of Stuff.</p>
-</div>
+</welcome-section>
 
 
 
@@ -80,7 +82,7 @@
     <!-- <a href=""><button id="previous" class="arrowButton" onclick= "plusSlides(-1)">&#10094;</button></a> -->
     <!--  image slider start -->
   
-    <div class="projectSlides">
+    <slides class="projectSlides">
         <div class="slidesAndButtons">
              <!--start radio buttons  -->
              <input type="radio" name="radio-btn" id="radio1">
@@ -93,7 +95,7 @@
              <!--start slide images  -->
             <div class="slide first">
                 <div class="webContainer">
-                <a href="https://bard.google.com/" ><img  src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
+                <a href="https://coltonmakesstuff.github.io/portfolio/" ><img  src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
                     <div class="stack">
                         <h2>Portfolio Site</h2>
                 <p>I created my portfolio site to showcase my skills and experience as a software engineer. I used HTML, JavaScript, VS Code, and CSS to create the site.</p>
@@ -104,7 +106,7 @@
             </div>
             <div class="slide">
                 <div class="webContainer">
-                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                    <a href="https://google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                         <div class="stack">
                         <h2>Lorem ipsum dolor sit.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
@@ -114,7 +116,7 @@
             </div>
             <div class="slide">
                 <div class="webContainer">
-                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                    <a href="https://google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                         <div class="stack">
                         <h2>Lorem ipsum dolor sit.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
@@ -123,7 +125,7 @@
             </div>
             <div class="slide">
                 <div class="webContainer">
-                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                    <a href="https://google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                         <div class="stack">
                             <h2>Lorem ipsum dolor sit.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
@@ -132,7 +134,7 @@
             </div>
             <div class="slide">
                 <div class="webContainer">
-                    <a href="https://bard.google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+                    <a href="https://google.com/" ><img  src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                         <div class="stack">
                             <h2>Lorem ipsum dolor sit.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, incidunt culpa corporis a suscipit magni asperiores ducimus possimus, laudantium corrupti nihil modi accusamus vitae minus praesentium? Natus unde voluptatibus saepe minus culpa vero asperiores quidem dolor praesentium reprehenderit earum nulla provident, quis velit ducimus ipsa!</p>
@@ -161,40 +163,40 @@
 </div>
             <!-- end manual navigation -->
             </div>
-        </div>
+        </slides>
         <!-- start section with websites listed -->
-<div class="seeMore">
+<see-more-section class="seeMore">
         <mostCurrent class="mostCurrent">
            <div class="photoContainer">
-             <a href="https://bard.google.com/" target="_blank"><img class="photo" src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
+             <a href="https://coltonmakesstuff.github.io/portfolio/" target="_blank"><img class="photo" src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
             <p class="caption">Profile Site (this one)</p>
         </div>
         </mostCurrent>
 
-        <div class="photoSection">
+        <thumbnails-of-each class="photoSection">
         <div class="topFive">
             <div class="photoContainer">
-            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
+            <a href="https://google.com/" target="_blank"><img class="photo" src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
                 <p class="caption">Profile Site (this one)</p>
             </div>
 
             <div class="photoContainer">
-            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+            <a href="https://google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                 <p class="caption">website caption and blurb</p>
             </div>
 
             <div class="photoContainer">     
-            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+            <a href="https://google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                 <p class="caption">website caption and blurb</p>
             </div>
 
             <div class="photoContainer">
-            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+            <a href="https://google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                 <p class="caption">website caption and blurb</p>
             </div>
         
             <div class="photoContainer">
-            <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+            <a href="https://google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
                 <p class="caption">website caption and blurb</p>
             </div>
         </div>
@@ -202,28 +204,28 @@
         <div class="threeMostRecent">
 
     <div class="photoContainer">
-        <a href="https://bard.google.com/" target="_blank"><img class="photo" src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
+        <a href="https://google.com/" target="_blank"><img class="photo" src="assets/Screenshot 2023-06-26 at 3.19.50 PM.png"alt="webpage 1" /></a>
             <p class="caption">Profile Site (this one)</p>
         </div>
 
         <div class="photoContainer">
-        <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+        <a href="https://google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
             <p class="caption">website caption and blurb</p>
         </div>
 
         <div class="photoContainer">     
-        <a href="https://bard.google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
+        <a href="https://google.com/" target="_blank"><img class="photo" src="https://dummyimage.com/200x3:4"alt="webpage 1" /></a>
             <p class="caption">website caption and blurb</p>
         </div>
         </div>
 <!-- end outline for smaller screen size -->
-        </div>   
-            <div >
+        </thumbnails-of-each>   
+            <button-for-seeing-all >
                 <div class="center-button">
                      <!-- <a href=""><button class="see-all-button">- See All -</button></a> -->
                 </div>
-            </div>
-        </div>
+            </button-for-seeing-all>
+        </see-more-section>
 
 </div> 
 <!-- end section with websites listed -->
